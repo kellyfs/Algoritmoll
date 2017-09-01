@@ -1,5 +1,5 @@
-
-public class Ap2_ListaDeExercicio {
+//Nome: Kelly Ferreira Santos
+    
     static Scanner leitor = new Scanner (System.in);
     
     public static String menu (){
@@ -105,4 +105,3 @@ public class Ap2_ListaDeExercicio {
         String pesquisanome = pesquisaNome(nome);
         String removenome = removeNome(nome, pesquisanome);
     }
-}
