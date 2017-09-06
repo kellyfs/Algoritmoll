@@ -1,0 +1,57 @@
+public class Lampada {
+    
+    public boolean acesa;
+    
+    public void desligar(){
+       acesa = false;    
+    }
+    
+    public void ligar(){
+       acesa = true;    
+    }
+    
+    public void imprimirEstado(){
+        if (acesa){
+          System.out.println("Acesa");
+      } else {
+          System.out.println("Apagada");
+      }
+      
+    }
+    
+    
+}
+
+
+
+
+
+public class Contador {
+    
+    private int valor;
+    
+   public int Contador(){
+       valor = 0;
+       return valor;
+   }
+   
+   public void Incrementa(){
+       valor++;
+   }
+   
+   public void Zerar(){
+       valor = 0;
+   }
+   
+   public int getValor(){
+       return valor;
+   }
+   
+    public static void main(String[] args) {
+        Contador c1 = new Contador ();
+        c1.Incrementa();
+        c1.Incrementa();
+        c1.Incrementa();
+        //System.out.println("C1: " c1.getValor());
+    }
+}
