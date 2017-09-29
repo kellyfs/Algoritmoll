@@ -1,0 +1,47 @@
+int canal = 0;
+    int volume = 0;
+    boolean ligada = false;
+    
+    public void ligarTv(){
+    ligada = true;
+}
+    
+    public void desligarTv(){
+    ligada = false;
+    }
+    
+    public void canalSeguinte(){
+        if(canal >= 99){
+            return;
+        }
+        else {
+            canal++;
+        }
+    }
+    
+    public void canalAnterior(){
+        if(canal <= 0){
+            return;
+        }
+        else {
+            canal--;
+        }
+    }
+    
+    public void aumentarVolume(){
+        if(volume >= 20){
+            return;
+        }
+        else {
+            volume++;
+        }
+    }
+    
+    public void diminuirVolume(){
+        if(volume <= 0){
+            return;
+        }
+        else {
+            volume--;
+        }
+    }
